@@ -302,3 +302,17 @@
 //   }
   
 //   console.log(massiv());
+
+// 6-masala
+// function positiveArray(arr) {
+//     let a = [];
+//     for (const i of arr) {
+//         if ( i > 9 && i < 100 ){
+//             a.push (i);
+//         }
+//     }
+//     return a;
+// }
+// console.log(positiveArray([10, 2, 6, 11, 80, 99, -33, -55]));
+
+// 7-masala
