@@ -1,200 +1,310 @@
 // 1-masala
-// function sumArray(arr) {
-//     if (!Array.isArray(arr) || arr.length === 0) {
-//         return 0;
+// function yigindi(argument) {
+//     let sum = 0;
+//     for( i = 0; i < argument.length; i++){
+//         sum = sum + argument[i];
 //     }
-//     const sum = arr.kamaytirish((yigindi, qiymat) => yigindi + qiymat, 0);
 //     return sum;
 // }
-// const javob = [19, 21, 30, 40, 25];
-// console.log(sumArray(javob));
+// console.log(yigindi([1, 7, 12, 9, 6, 19]));
 
 // 2-masala
-// function engKattaElement(arr) {
-//     if (!Array.isArray(arr) || arr.length === 0) {
-//         return undefined;
+// function summ(arg) {
+//     let max = arg[0];
+//     for (let i = 0; i < arg.length; i++) {
+//         if(max >= arg[i]) {
+//             max = max;
+//         } else {
+//             max = arg[i];
+//         }
 //     }
-//     return Math.max(...arr);
-// }
-// const raqam = [136, 20, 322, 401, 120];
-// console.log(engKattaElement(raqam));
+
+//     return max;
+//   }
+
+// console.log(summ([1, 5, 6, 8, 91, 12]));
 
 // 3-masala
-// function EngKichikElement(arr) {
-//     if (arr.length === 0) {
-//         console.log("Massiv bo'sh");
-//     }
-//     let kichik = arr[0];
-//     for (let i = 1; i < arr.length; i++) {
-//         if (arr[i] < kichik) {
-//             kichik = arr[i];
+// function summ(arg) {
+//     let min = arg[0];
+//     for (let i = 0; i < arg.length; i++) {
+//         if(min <= arg[i]) {
+//             min = min;
+//         } else {
+//             min = arg[i];
 //         }
 //     }
-//     return kichik;
-// }
 
-// const array = [30, 15, 21, 8, 22];
-// console.log(EngKichikElement(array));
+//     return min;
+//   }
+
+//   console.log(summ([2, 3, 6, 7, 9, 12, 3]));
 
 // 4-masala
-// function ManfiyMusbat(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] < 0) {
-//             arr[i] = Math.abs(arr[i]);
-//         }
+// function manfiy() {
+//   let arg = [2, -3, 5, 7, -9, -12, -21];
+//   for (let m = 0; m < arg.length; m++) {
+//     if (arg[m] < 0) {
+//       console.log(arg[m] * -1);
 //     }
-//     return arr;
+//   }
+
+//   return arg;
 // }
-// const array = [-33, 15, -10, 8, -12];
-// console.log(ManfiyMusbat(array));
+
+// console.log(manfiy());
 
 // 5-masala
-// function oshirish(arr) {
-//     for ( let i = 0; i < arr.length; i++){
-//         arr[i] = arr[i] * 2;
+
+// function summ(arg) {
+//     for (let i = 0; i < arg.length; i++) {
+//         console.log(arg[i] * 2);
 //     }
-//     return arr;
+
+//     return arg;
 // }
-// const array = [20, 30, 40, 50, 60, 70, 80, 90, 100];
-// console.log(oshirish(array));
+
+// console.log(summ([2, 3, 5, 7, 9, 12, 21]));
 
 // 6-masala
-// function JuftRaqam(arr) {
-//     return arr.filter(function(element) {
-//         return element % 2 !== 0;
-//     });
+// function summ(arg) {
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] % 2 == 0) {
+//       arg.splice(i, 1);
+
+//       i--;
+//     }
+//   }
+
+//   return arg;
 // }
-// const array = [11, 29, 33, 41, 52, 62];
-// console.log(JuftRaqam(array));
+
+// console.log(summ([2, 3, 5, 7, 9, 12, 21]));
 
 // 7-masala
-// function ToqRaqam(arr) {
-//     return arr.filter(function(element) {
-//         return element % 2 !== 1;
-//     });
+// function summ(arg) {
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] % 2 == 1) {
+//       arg.splice(i, 1);
+
+//       i--;
+//     }
+//   }
+
+//   return arg;
 // }
-// const array = [11, 29, 33, 41, 52, 62];
-// console.log(ToqRaqam(array));
+
+// console.log(summ([2, 3, 5, 7, 9, 12, 21]));
 
 // 8-masala
-// function bor(arr, element) {
-//     return arr.includes(element);
+// function tekshirish() {
+//     let massiv = [2,4,7,'salom', true, null];
+//     if (massiv.length > 0) {
+//         console.log(${massiv}  mavjud);
+//     } else  {
+//         console.log(${massiv}  mavjud emas);
+//     }
+
+//     return massiv;
 // }
-// const array = [10, 22, 13, 4, 5, 8, 222, 19];
-// console.log(bor(array, 13));
-// console.log(bor(array, 19));
+
+// console.log(tekshirish());
 
 // 9-masala
-// function teskariTartib(arr) {
-//     return arr.slice().reverse();
+// function massiv(arg) {
+//     for(let i = 0; i < arg.length; i++)  {
+//         console.log(arg[i] * -1);
+//     }
+
+// return arg;
 // }
-// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// console.log(teskariTartib(array));
-// console.log(array);
+
+// console.log(massiv([1,3, 5,-4,6,-90,-42,55]));
 
 // 10-masala
-// function hisoblash(arr, qiymati) {
-//     let count = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] > qiymati) {
-//             count++;
-//         }
+// function katta(arg) {
+//   let a = 6;
+
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] < a) {
+//       arg.splice(i, 1);
+//       i--;
 //     }
-//     return count;
+//   }
+
+//   return arg;
 // }
-// const array = [10, 50, 80, 30, 70, 100, 200];
-// const qiymati = 50;
-// console.log(hisoblash(array, qiymati));
+
+// console.log(katta([2, 23, -10, 3, 5, 7, 9, 12, 21]));
 
 // 11-masala
-// function Oshirish(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         arr[i] = arr[i] + 1;
+// function massiv(arg) {
+//     for (let i = 0; i < arg.length; i++) {
+//         console.log(arg[i] + 1);
 //     }
-//     return arr;
+
+//     return arg;
 // }
-// const array = [10, 20, 30, 40, 50];
-// console.log(Oshirish(array));
+
+// console.log(massiv([-7, -2, 2, 3, 30, 5, 7, 9, 12]));
 
 // 12-masala
-// function ElementningIndeksi(arr, element) {
-//     return arr.indexOf(element);
+// function index(arg) {
+//   for (let i = 0; i < arg.length; i++) {
+//     console.log(${arg[i]}  indeksi  ${i});
+//   }
+
 // }
-// const array = [1,2,3,4,5,6,7,8,9,10];
-// const element = 9;
-// console.log(ElementningIndeksi(array, element));
-// console.log(ElementningIndeksi(array, 7));
+
+// console.log(index([-2, 3, 5, -7, 9, 12, -32]));
 
 // 13-masala
-// function hisoblash(arr, qiymati) {
-//     let count = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] === qiymati) {
-//             count++;
-//         }
+// function teng(arg) {
+//   let a = 5;
+//   let counter = 0;
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] == a) {
+//       counter = counter + 1;
 //     }
-//     return count;
+//   }
+
+//   return counter;
 // }
-// const array = [12, 22, 3, 4, 4, 5, 4];
-// const HisoblashQiymati = 4;
-// const hodisalar = hisoblash(array, HisoblashQiymati);
-// console.log(`${HisoblashQiymati} qiymati massivda ${hodisalar} marta paydo bo'ladi.`);
+
+// console.log(teng([2, 23, 5, 3, 5, 7, 9, 5, 32, 5]));
 
 // 14-masala
-// function musbatRaqamlar(arr) {
-//     return arr.filter(num => num > 0);
+// function massiv(arg) {
+//   let Massiv = [];
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] > 0) {
+//       Massiv.push(arg[i]);
+//     }
+//   }
+
+//     return Massiv;
 // }
-// const array = [-3, 5, -17, 10, 15, -33];
-// const musbatRaqam = musbatRaqamlar(array);
-// console.log("Masivdagi musbat raqamlar:", musbatRaqam);
+// console.log(massiv([-2, 3, 5, -7, 9, 12, -32]));
 
 // 15-masala
-// function manfiyRaqamlar(arr) {
-//     return arr.filter(num => num < 0);
-// }
-// const array = [-1, 5, -99, 101, -8, -9];
-// const manfiyRaqam = manfiyRaqamlar(array);
-// console.log(`Massivdagi manfiy raqamlar:`, manfiyRaqam);
+// function massiv(arg) {
+//   let Masssiv = [];
+//   for (let i = 0; i < arg.length; i++) {
+//     if (arg[i] < 0) {
+//       Massiv.push(arg[i]);
+//     }
+//   }
 
-// 16-masala
-// function satr(arr) {
-//     return arr.map(String);
+//     return Massiv;
 // }
-// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const stringArray = satr(array);
-// console.log("Massiv satrlarga aylantirildi:", stringArray);
+// console.log(massiv([-2, 3, 5, -7, 9, 12, -32]));
 
 // 17-masala
-// function kvadrati(arr) {
-//     return arr.map(num => num * num);
-// }
-// const array = [11, 22, 33, 44, 55, 111];
-// const KvadratMassiv = kvadrati(array);
-// console.log("Kvadrat massiv:", KvadratMassiv);
+// function (arg) {
+//     for(let i = 0; i < arg.length; i++) {
+//         console.log(arg[i] ** 2);
+//     }
 
-// 18-masala
-// function nusxalash(NusxaMassiv) {
-//     return [...NusxaMassiv];
+//     return arg;
 // }
-// const haqiqiy = [19, 22, 31, 40, 51];
-// const nusxalanganMassiv = nusxalash(haqiqiy);
-// console.log("Nusxa olingan massiv:", nusxalanganMassiv);
+
+// console.log(massiv([-7, -2, 2, 3, 30, 5, 7, 9, 12]));
+
+
+
+
+//   return newMas;
+// }
+// console.log(Newmass([-2, 3, 5, -7, 9, 12, -32]));
 
 // 19-masala
-// function Hisoblash(arr) {
-//     const sum = arr.reduce((barchasi, num) => barchasi + num, 0);
-//     const ortacha = sum / arr.length;
-//     return { sum, ortacha };
-// }
-// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-// const { sum, ortacha } = Hisoblash(array);
-// console.log("Yig'indisi:", sum);
-// console.log("O'rtacha qiymati :", ortacha);
+// let N = [2, 3, 6, 7, 9, 12, 3];
+// function count(N) {
+//   let counter = 0;
+//   let sum = 0;
+//   let a;
+//   for (let i = 0; i < N.length; i++) {
+//     counter = counter + 1;
+//     sum = sum + N[i];
+//   }
 
-// 20-masala
-// function takroriy(arr) {
-//     return [...new Set(arr)];
+//   a = sum / counter;
+
+//   return a;
 // }
-// const array = [1, 2, 3, 4, 3, 2, 5, 6, 6, 7, 1, 3];
-// const noyob = takroriy(array);
-// console.log("Dublikatlari olib tashlangan massiv:", noyob);
+
+// console.log(count(N));
+
+// 1-masala
+// for (let i = 0; i < N.length; i++) {
+//   console.log(N[i]);
+// }
+
+// function son(n) {
+//     let s = 1;
+
+//     for (let i= 0; i < n.length; i++) {
+//         if(n[i] % 2 == 1) {
+//             s = s * n[i]
+//         }
+//     }
+
+//     return s;
+// }
+
+// console.log(son([2, 3, 5, 7, 8]));
+
+// 2-masala
+// let N = [12,23,24,55,87,9];
+
+// function count(N) {
+//     let counter = 0;
+//     for (let i = 0; i < N.length; i++) {
+//         if (N[i] % 3 == 0 && N[i] % 2 == 0) {
+//             counter = counter + 1;
+//         }
+//     }
+
+//     return counter;
+// }
+
+// console.log(count[N]);
+
+// 3-masala
+// function massiv() {
+//   let n = +prompt("n soni kiritilsin");
+//   let s = [];
+//   for (let i = 1; i <= n; i++) {
+//     s.push(i);
+//   }
+
+//   return s;
+// }
+
+// console.log(massiv());
+
+// 4-masala
+// function massiv() {
+//     let n = +prompt("n soni kiritilsin");
+//     let b = [];
+//     for (let i = 1; i <= n * 2; i += 2) {
+//       b.push(i);
+//     }
+
+//     return b;
+//   }
+
+//   console.log(massiv());
+
+// 5-masala
+// function massiv() {
+//     let n = +prompt("n soni kiritilsin");
+//     let m = [];
+//     for (let i = 2; i <= n * 2; i += 2) {
+//       m.push(i);
+//     }
+  
+//     return m;
+//   }
+  
+//   console.log(massiv());
