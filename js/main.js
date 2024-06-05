@@ -211,12 +211,6 @@
 // console.log(massiv([-7, -2, 2, 3, 30, 5, 7, 9, 12]));
 
 
-
-
-//   return newMas;
-// }
-// console.log(Newmass([-2, 3, 5, -7, 9, 12, -32]));
-
 // 19-masala
 // let N = [2, 3, 6, 7, 9, 12, 3];
 // function count(N) {
